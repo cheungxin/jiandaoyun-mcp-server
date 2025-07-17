@@ -174,7 +174,49 @@ JIANDAOYUN_BASE_URL=https://api.jiandaoyun.com/api
 
 ### 在 Claude Desktop 中配置
 
+#### 方法一：使用 npx（推荐）
+
 在 `claude_desktop_config.json` 中添加：
+
+```json
+{
+  "mcpServers": {
+    "jiandaoyun": {
+      "command": "npx",
+      "args": ["jiandaoyun-mcp-server"],
+      "env": {
+        "JIANDAOYUN_APP_KEY": "your_app_key"
+      }
+    }
+  }
+}
+```
+
+#### 方法二：使用本地安装
+
+```bash
+# 全局安装
+npm install -g jiandaoyun-mcp-server
+
+# 或本地安装
+npm install jiandaoyun-mcp-server
+```
+
+配置文件：
+```json
+{
+  "mcpServers": {
+    "jiandaoyun": {
+      "command": "jiandaoyun-mcp",
+      "env": {
+        "JIANDAOYUN_APP_KEY": "your_app_key"
+      }
+    }
+  }
+}
+```
+
+#### 方法三：使用 Node.js 直接运行
 
 ```json
 {
@@ -189,6 +231,11 @@ JIANDAOYUN_BASE_URL=https://api.jiandaoyun.com/api
   }
 }
 ```
+
+**配置说明：**
+- 将 `your_app_key` 替换为你的简道云API密钥
+- 从v2.0开始，`APP_ID`作为工具参数传入，无需在环境变量中配置
+- 推荐使用npx方式，无需手动安装和维护本地文件
 
 ### 获取表单字段
 ```javascript
