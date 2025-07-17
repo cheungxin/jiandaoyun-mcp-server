@@ -1,0 +1,38 @@
+node_modules/
+build/
+dist/
+.env
+.env.local
+.env.production
+*.log
+.DS_Store
+coverage/
+.vscode/
+.idea/
+
+# 测试和调试文件
+test-*.cjs
+test-*.js
+debug-*.cjs
+demo-*.cjs
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.#*
+
+# 操作系统文件
+Thumbs.db
+Desktop.ini
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 依赖锁文件（可选，取决于项目需求）
+# package-lock.json
+# yarn.lock

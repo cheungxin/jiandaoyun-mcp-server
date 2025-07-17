@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "jiandaoyun": {
+      "command": "node",
+      "args": ["/path/to/jiandaoyun-mcp-server/build/index.js"],
+      "env": {
+        "JIANDAOYUN_APP_KEY": "your_app_key",
+        "JIANDAOYUN_BASE_URL": "https://www.jiandaoyun.com"
+      }
+    }
+  }
+}
