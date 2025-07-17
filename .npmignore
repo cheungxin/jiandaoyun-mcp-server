@@ -1,0 +1,14 @@
+src/
+*.ts
+!*.d.ts
+tsconfig.json
+.env*
+logs/
+test-*.cjs
+debug-*.cjs
+demo-*.cjs
+start.sh
+start.bat
+ecosystem.config.js
+DEPLOYMENT*.md
+.kiro/
