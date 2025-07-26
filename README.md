@@ -2,6 +2,10 @@
 
 一个用于简道云表单数据管理的 MCP (Model Context Protocol) 服务，支持完整的CRUD操作和高级查询功能。
 
+<a href="https://glama.ai/mcp/servers/@cheungxin/jiandaoyun-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@cheungxin/jiandaoyun-mcp-server/badge" alt="JianDaoYun Server MCP server" />
+</a>
+
 ## 功能特性
 
 - 🔍 **表单字段查询**: 获取表单的字段定义，包括字段类型、必填状态等
